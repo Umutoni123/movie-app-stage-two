@@ -1,0 +1,39 @@
+/* MovieCard.css */
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    max-width: 300px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-poster {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .movie-info {
+    padding: 10px;
+  }
+  
+  .movie-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .movie-release-date {
+    font-size: 14px;
+    color: #666;
+  }
+  
