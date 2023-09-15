@@ -63,7 +63,7 @@ function MovieSearch() {
         </div>
       )}
 
-      {loading && <p>Loading...</p>}
+      {loading && <p className='text-8xl text-center font-bold'>Loading...</p>}
     </div>
   );
 }

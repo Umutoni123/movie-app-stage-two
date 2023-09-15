@@ -7,10 +7,24 @@ import '../css/SideBar.css'
 import vid from '../img/tv.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faFilm,faTv, faCalendarAlt, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+function formatDateToUTC(dateString) {
+  const options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    timeZone: 'UTC',
+  };
+  return new Date(dateString).toLocaleDateString('en-US', options);
+}
 
 function MovieDetails() {
   const { id } = useParams();
   const [movieDetails, setMovieDetails] = useState(null);
+  
 
   useEffect(() => {
     // Fetch movie details by ID from the API
@@ -27,7 +41,7 @@ function MovieDetails() {
   if (!movieDetails) {
     return <div>Loading...</div>;
   }
-
+  const formattedDate = formatDateToUTC(movieDetails.release_date);
   return (
     <div className="movie-details-container">
       {/* Sidebar */}
@@ -73,7 +87,7 @@ function MovieDetails() {
       </div>
 
       {/* Movie Details */}
-      <div className="movie-details">
+      <div className="container movie-details">
         <div className="movie-poster">
           <img
             src={`https://image.tmdb.org/t/p/w300${movieDetails.poster_path}`}
@@ -89,8 +103,8 @@ function MovieDetails() {
             </h1>
           </div>
           <div>
-            <p className="movie-release-date" data-testid="movie-release-date">
-              Release Date (UTC): {movieDetails.release_date}
+          <p className="movie-release-date" data-testid="movie-release-date">
+              Release Date (UTC): {formattedDate}
             </p>
           </div>
           <div>

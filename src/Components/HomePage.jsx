@@ -5,6 +5,9 @@ import MovieSearch from "./MovieSearch";
 import "./../css/card.css";
 import "./../css/HomePage.css";
 import vid from "../img/tv.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 
 import menu from "../img/Menu.png";
 
@@ -28,7 +31,7 @@ function HomePage() {
   return (
     <div>
       <div className="home-page1">
-        <div className="header">
+        <div className=" container header">
           <nav className="navigation">
             {/* Logo */}
             <div className="logo">
@@ -51,13 +54,12 @@ function HomePage() {
             </div>
           </nav>
         </div>
-        <div className="movie-infos">
+        <div className="container movie-infos">
           <div className="movie-info">
             {/* Movie Title */}
             <div className="movie-title">
               <h1>
-                John Wick 3 : <br />
-                Parabellum
+                John Wick 3 :<br />Parabellum
               </h1>
             </div>
             {/* Description */}
@@ -71,17 +73,35 @@ function HomePage() {
             </div>
             {/* Watch Video Button */}
             <button href="#" className="watch-video-button">
-              <img src={vid} id="watch-video-button" alt="" />
+              <div>
+                <FontAwesomeIcon
+                  icon={faPlayCircle}
+                  style={{ color: "#ffffff" }}
+                />
+              </div>
               <span>Watch Video</span>
             </button>
           </div>
         </div>
       </div>
-      
-      <div className="home-page">
-        {topMovies.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
-        ))}
+      <div className="container">
+        <div className="flex justify-between py-8 ">
+          <h1 className="text-3xl font-bold ">Movies</h1>
+          <div className="flex justify-between items-center cursor-pointer">
+            <span className="text-[#E11D48]">See more</span>
+            <div>
+              <FontAwesomeIcon
+                icon={faChevronRight}
+                style={{ color: "#ca4963" }}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="home-page">
+          {topMovies.map((movie) => (
+            <MovieCard key={movie.id} movie={movie} />
+          ))}
+        </div>
       </div>
     </div>
   );
