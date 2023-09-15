@@ -2,7 +2,7 @@
 
 MovieBox is a movie discovery web application built with React that allows users to search for movies, view movie details, and save their favorite movies. It also provides a list of top-rated movies on the homepage.
 
-![MovieBox Screenshot](screenshot.png)
+#Deployment: https://whimsical-lebkuchen-19a5ee.netlify.app/
 
 ## Table of Contents
 - [Features](#features)
