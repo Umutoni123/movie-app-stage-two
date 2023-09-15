@@ -24,6 +24,12 @@ function MovieDetails() {
 
   return (
     <div>
+      <img
+          src={`https://image.tmdb.org/t/p/w300${movieDetails.poster_path}`}
+          alt={movieDetails.title}
+          className="movie-poster"
+          data-testid="movie-poster"
+        /> 
       <h1 data-testid="movie-title">{movieDetails.title}</h1>
       <p data-testid="movie-release-date">Release Date (UTC): {movieDetails.release_date}</p>
       <p data-testid="movie-runtime">Runtime: {movieDetails.runtime} minutes</p>

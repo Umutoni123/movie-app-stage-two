@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Style for the home page container */
+.home-page1 {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/Poster.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff; /* Text color for elements inside home-page */
+    padding: 20px;
+    
+    
+  }
+  
+  /* Style for the header */
+  .header {
+     /* Transparent blue background */
+    color: #fff;
+    
+  }
+  
+  /* Style for the navigation bar */
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+  }
+  
+  /* Style for the logo */
+  .logo {
+    
+    display: flex;
+    justify-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 200px;
+    
+  }
+  .logo-img{
+    display: flex;
+    justify-items: center;
+  }
+  .logo-img img{
+    width: 30px;
+    height: 30px;
+  }
+  .logo-span{
+    
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Style for the search bar */
+  .search-bar {
+    
+    margin: 0 20px;
+    
+  }
+  
+  /* Style for the sign-in form */
+  .sign-in-form {
+    /* Add your sign-in form styles here */
+    display: flex;
+    background-color: transparent;
+    color: white;
+    justify-items: center;
+    justify-content: space-between;
+    
+    width: 100px;
+    
+    
+  }
+  .sign-in-form .butt{
+    
+  }
+  .sign-in-form button{
+    background-color: transparent;
+  }
+  .sign-in-form img{
+    display: flex;
+    justify-items: center;
+    width: 30px;
+    height: 30px;
+  }
+  .sign-in-form span{
+    align-items: center;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  /* Style for the movie info section */
+  .movie-info {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 5rem;
+  }
+  .movie-infos{
+    display: flex;
+    justify-items: center;
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+  /* Style for the movie title */
+  .movie-title {
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  
+  /* Style for the movie description */
+  .movie-description {
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  .movie-description p{
+    line-height: 1.5;
+    font-size: 18x;
+  }
+  
+  /* Style for the watch video button */
+  .watch-video-button {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 5rem;
+   
+  }
+  
+  /* Style for the watch video button on hover */
+  .watch-video-button:hover {
+    background-color: #c2185b;
+  }
+  #watch-video-button{
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (max-width: 480px) {
+    .home-page {
+      padding: 5px;
+    }
+  
+    .header {
+      padding: 5px 0;
+    }
+  
+    .logo {
+      font-size: 20px;
+    }
+  
+    .search-bar {
+      margin: 0 10px;
+    }
+  
+    .movie-title {
+      font-size: 24px;
+    }
+  
+    .movie-description {
+      font-size: 16px;
+    }
+  
+    .watch-video-button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }

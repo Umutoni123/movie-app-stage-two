@@ -1,0 +1,79 @@
+/* MovieSearch.css */
+
+/* Container styles */
+.movie-search-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Search input container styles */
+  .search-input-container {
+    display: flex;
+    align-items: center;
+    background-color: transparent; /* Set the background color for the input container */
+    border: 2px solid #fff;
+    border-radius: 5px;
+    
+    
+  }
+  
+  /* Search input styles */
+  .search-input {
+    flex-grow: 1;
+    background-color: transparent;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  outline: none; 
+  width: 80%;
+  }
+  .search-input::placeholder{
+    color: white;
+  }
+  
+  /* Search button styles */
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Icon styles */
+  .fa-search {
+    margin-right: 10px;
+  }
+  
+  /* Movie grid styles */
+  .movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Card styles */
+  .movie-card {
+    
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .movie-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Loading indicator styles */
+  .loading {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
