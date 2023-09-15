@@ -4,6 +4,9 @@ import axios from 'axios';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 import '../css/MovieDetails.css';
 import '../css/SideBar.css'
+import vid from '../img/tv.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faFilm,faTv, faCalendarAlt, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 function MovieDetails() {
   const { id } = useParams();
@@ -30,33 +33,43 @@ function MovieDetails() {
       {/* Sidebar */}
       <div className="sidebar">
         <div className="logo">
-          <Link to="/">Logo</Link>
+          <Link to="/">
+          
+              <div className="logo-img">
+                <img src={vid} alt="" />
+              </div>
+              <div className="logo-span">
+                <span>MovieBox</span>
+              </div>
+          </Link>
         </div>
         <ul className="navigation-links">
           <li>
-            <Link to="/">
-              <i className="fas fa-home"></i> Home
+            <Link to="/" className='flex gap-4'>
+            <FontAwesomeIcon icon={faHome} /> <span>Home</span>
             </Link>
           </li>
           <li>
-            <Link to="/movies">
-              <i className="fas fa-film"></i> Movies
+            <Link to="/movies" className='flex gap-4'>
+            <FontAwesomeIcon icon={faFilm} /> <span>Movies</span>
             </Link>
           </li>
           <li>
-            <Link to="/series">
-              <i className="fas fa-tv"></i> Movie Series
+            <Link to="/series" className='flex gap-4'>
+            <FontAwesomeIcon icon={faTv} /> <span>TV Series</span>
             </Link>
           </li>
           <li>
-            <Link to="/upcoming">
-              <i className="fas fa-calendar-alt"></i> Upcoming
+            <Link to="/upcoming" className='flex gap-4'>
+            <FontAwesomeIcon icon={faCalendarAlt} /> <span>Upcoming</span>
             </Link>
           </li>
         </ul>
         <div className="logout-button">
-          <button>Logout</button>
-        </div>
+      <Link to="/logout">
+        <FontAwesomeIcon icon={faSignOutAlt} /> Logout
+      </Link>
+    </div>
       </div>
 
       {/* Movie Details */}
@@ -71,7 +84,7 @@ function MovieDetails() {
         </div>
         <div className="all-det">
           <div>
-            <h1 className="movie-title" data-testid="movie-title">
+            <h1 className="movie-title-det" data-testid="movie-title">
               {movieDetails.title}
             </h1>
           </div>

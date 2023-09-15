@@ -11,14 +11,18 @@ function MovieCard({ movie }) {
       <div className="like-icon">
         <FontAwesomeIcon icon={faHeart}  />
       </div>
+        <div className=" movie-poster">
         <img
           src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
           alt={movie.title}
-          className="movie-poster"
+          
           data-testid="movie-poster"
         />
+        </div>
+        
+        
         <div className="movie-info">
-          <h2 className="movie-title" data-testid="movie-title">
+          <h2 className="movie-title font-bold" data-testid="movie-title">
             {movie.title}
           </h2>
           <p className="movie-release-date" data-testid="movie-release-date">
