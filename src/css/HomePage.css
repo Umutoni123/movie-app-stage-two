@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     color: #fff; /* Text color for elements inside home-page */
-    padding: 20px;
+    padding: 0px;
     
     
   }
@@ -58,7 +58,8 @@
   /* Style for the search bar */
   .search-bar {
     
-    margin: 0 20px;
+    
+    width: 600px;
     
   }
   

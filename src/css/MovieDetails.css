@@ -1,0 +1,60 @@
+/* MovieDetails.css */
+
+/* Container for the movie details */
+.movie-details-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+    justify-content: space-around;
+    padding-top: 4rem;
+  }
+  
+  /* Styles for the movie poster image */
+  .movie-poster {
+    max-width: 100%;
+    height: auto;
+    
+    border-radius: 5px;
+    
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .all-det{
+    width: 500px;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5;
+    align-items: center;
+  }
+  /* Styles for the movie title */
+  .movie-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+  }
+  
+  /* Styles for the release date */
+  .movie-release-date {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the runtime */
+  .movie-runtime {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the movie overview */
+  .movie-overview {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

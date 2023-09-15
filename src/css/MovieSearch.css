@@ -21,6 +21,7 @@
   .search-input {
     flex-grow: 1;
     background-color: transparent;
+    color: #fff;
   border: none;
   padding: 10px;
   font-size: 16px;
@@ -35,7 +36,7 @@
   button {
     background-color: transparent;
     border: none;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -45,6 +46,7 @@
   /* Icon styles */
   .fa-search {
     margin-right: 10px;
+    color: white;
   }
   
   /* Movie grid styles */

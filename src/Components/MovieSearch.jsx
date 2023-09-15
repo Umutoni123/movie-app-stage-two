@@ -51,7 +51,7 @@ function MovieSearch() {
         className='search-input'
         />
         <button onClick={handleSearch} disabled={loading}>
-        <FontAwesomeIcon icon={faSearch} />
+        <FontAwesomeIcon icon={faSearch} style={{ color: '#ffffff' }}/>
         </button>
       </div>
 
